@@ -105,3 +105,34 @@ body {
     border: 2px solid #ffffff;
     transition: background ease-in-out .5s;
 }
+
+.slider-block label:hover .control, 
+#slide-1:checked ~ .text-controls-block > .controls-block label:nth-of-type(1) .control,
+#slide-2:checked ~ .text-controls-block > .controls-block label:nth-of-type(2) .control,
+#slide-3:checked ~ .text-controls-block > .controls-block label:nth-of-type(3) .control,
+#slide-4:checked ~ .text-controls-block > .controls-block label:nth-of-type(4) .control,
+#slide-5:checked ~ .text-controls-block > .controls-block label:nth-of-type(5) .control {
+	background: #5e5e5e;
+}
+
+#slide-1:checked ~ .slider-img-block > .slide-1,
+#slide-2:checked ~ .slider-img-block > .slide-2,
+#slide-3:checked ~ .slider-img-block > .slide-3,
+#slide-4:checked ~ .slider-img-block > .slide-4,
+#slide-5:checked ~ .slider-img-block > .slide-5 {
+	opacity: 1;
+	z-index: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+#slide-1:checked ~ .text-controls-block > .slider-text-block > .slide-text-1,
+#slide-2:checked ~ .text-controls-block > .slider-text-block > .slide-text-2,
+#slide-3:checked ~ .text-controls-block > .slider-text-block > .slide-text-3,
+#slide-4:checked ~ .text-controls-block > .slider-text-block > .slide-text-4,
+#slide-5:checked ~ .text-controls-block > .slider-text-block > .slide-text-5 {
+	opacity: 1;
+	z-index: 1;
+}
