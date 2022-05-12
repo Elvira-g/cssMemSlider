@@ -13,7 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 90%;
-    padding: 60px;
+    padding: 5%;
     margin: 0 auto;
     box-sizing: border-box;
     background-color: #cccccc;
@@ -39,7 +39,7 @@ body {
     z-index: 0;
     transform: scale(1.2);
     opacity: 0;
-    transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    transition: transform ease-in-out 0.5s, opacity ease-in-out 0.5s;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -94,8 +94,8 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    height: 40px;
-    margin-top: 30px;
+    height: 4vh;
+    margin-top: 5vh;
 }
 
 .slider-text-block {
@@ -113,13 +113,13 @@ body {
     position: absolute;
     z-index: 0;
     opacity: 0;
-    transition: opacity ease-in-out 1s;
+    transition: opacity ease-in-out 0.8s;
 }
 
 .controls-block label {
     cursor: pointer;
 	display: inline-block;
-    padding: 16px 2px 16px 2px;
+    padding: 0 2px 16px 2px;
     margin: 0 3px 0 3px;
 	position: relative;
     width: 12px;
@@ -128,15 +128,15 @@ body {
 
 .controls-block label:last-child {
     margin: 0 0 0 3px;
-    padding: 16px 0 16px 2px;
+    padding: 0 0 16px 2px;
 }
 
 .control {
-    height: 8px;
-    width: 8px;
+    height: 90%;
+    width: 90%;
     border-radius: 50%;
     border: 2px solid #ffffff;
-    transition: background ease-in-out .5s;
+    transition: background ease-in-out 0.5s;
 }
 
 .slider-block label:hover .control, 
@@ -193,13 +193,14 @@ body {
     }
 
     .slider-img-block {
-        height: 300px;
+        height: 32vh;
+        margin-bottom: 2vh;
     }
 
     .text-controls-block {
         flex-direction: column;
-        height: 100px;
-        margin-top: 30px;
+        height: 10vh;
+        margin-top: 3vh;
         justify-content: flex-start;
         align-items: center;
     }
@@ -209,16 +210,16 @@ body {
     }
 
     .controls-block label {
-        cursor: pointer;
-        display: inline-block;
-        padding: 16px 4px 16px 4px;
+        padding: 0 4px 8px 4px;
         margin: 0;
-        position: relative;
-        width: 12px;
-        height: 12px;
+    }
+
+    .controls-block label:last-child {
+        padding: 0 4px 8px 4px;
     }
 
     .slider-text-block {
         width: 100%;
+        margin-top: 3vh;
     }
 }
